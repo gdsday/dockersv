@@ -18,6 +18,7 @@ RUN \
   echo "**** install build dependencies ****" && \
   apt-get update && \
   apt-get install -y \
+    python3-pip \
     build-essential \
     nodejs && \
   echo "**** install runtime dependencies ****" && \
