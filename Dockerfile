@@ -22,6 +22,7 @@ RUN \
     nodejs && \
   echo "**** install runtime dependencies ****" && \
   apt-get install -y \
+    python3 \
     git \
     jq \
     libatomic1 \
