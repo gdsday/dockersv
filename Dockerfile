@@ -23,6 +23,8 @@ RUN \
     nodejs && \
   echo "**** install runtime dependencies ****" && \
   apt-get install -y \
+    golang-go \
+    rclone \
     python3 \
     git \
     jq \
@@ -48,11 +50,9 @@ RUN \
   fi && \
   echo "**** clean up ****" && \
   apt-get purge --auto-remove -y \
-    build-essential \
     nodejs && \
   apt-get clean && \
   rm -rf \
-    /config/* \
     /tmp/* \
     /var/lib/apt/lists/* \
     /var/tmp/* \
