@@ -23,6 +23,7 @@ RUN \
     nodejs && \
   echo "**** install runtime dependencies ****" && \
   apt-get install -y \
+    fuse \
     golang-go \
     rclone \
     python3 \
