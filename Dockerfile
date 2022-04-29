@@ -24,6 +24,7 @@ RUN \
     nodejs && \
   echo "**** install runtime dependencies ****" && \
   apt-get install -y \
+    ffmpeg \
     fuse \
     golang-go \
     rclone \
