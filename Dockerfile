@@ -9,6 +9,7 @@ LABEL maintainer="aptalca"
 
 # environment settings
 ENV HOME="/config"
+ENV PATH="/config/.local/bin:${PATH}"
 
 RUN \
   echo "**** install node repo ****" && \
